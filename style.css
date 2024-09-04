@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --preto: #000000;
+    --vermelho: #fc2702;
+    --cinza:#1c1b1b;
+    --amarelo: #d6f00f;
+    --azul: #0015ff;
+    --font-primaria:"Playwrite CU", cursive;
+    --font-segundo:"Sevillana", cursive;
+}
+body{
+    background-color: #000000;
+    font-family: var(--font-segundo);
+    color:var(--amarelo);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+h1{
+    font-family: var(--font-primaria);
+    color: var(--vermelho);
+    font-size: 4em;
+
+}
+h3{
+    color: var(--amarelo);
+    font-family: var(--font-primaria);
+    font-size: 2em;
+}
+.mensagem{
+    font-size: 2.5em;
+    background-color: var(--cinza);
+    border-radius: 10px;
+    padding: 20px;
+}
+.box{
+    border: 8px inset var(--azul);
+    border-radius: 5px;
+    display: inline-block;
+    font-size:2em;
+    padding: 5px;
+    margin: 20px;
+}
