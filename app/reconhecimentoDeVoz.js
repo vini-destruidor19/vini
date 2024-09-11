@@ -10,14 +10,16 @@ recognition.start()
 recognition.addEventListener("result",onSpeaK)
 
 function onSpeaK(e){
-    e.log(e.results[0],[0.].transcript)
+    chute = (e.results[0][0].transcript)
     exibeChute(chute)
+    verificaValorChuteValido(chute)
 }
 
 function exibeChute(chute){
   elementChute.innerHTML = `
   <div>Você disse: </div>
-  <span> class="box">${chute}</span>
+  <span class="box">${chute}</span>
+  <div>o número secreto é maior </div>
   `
 }
 
